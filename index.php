@@ -8,7 +8,7 @@ include("inc/index.functions.php");
 include("config.php");
 */
 
-if ( $user_login = 0 ) {
+if ( $user_login == 0 ) {
   header("Location: chooser.php");
   exit(0);
 }
