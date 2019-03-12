@@ -1,0 +1,37 @@
+<?php
+
+// SETTINGS FOR sendmail and automatic reports
+
+// the username used to connect to smtp server
+define(mailuser,'user');
+
+// paswword
+define(mailpassword,'password');
+
+// mail server
+define(mailserver,'mailserver.foo.com');
+
+// mail server
+define(mailport,'25');
+
+// security
+define(mailsec,'tls');
+
+// the full path file that list the hosts and recipient mail
+// server names are those defined in zabbix
+// the format is <servername><blank><mail>   eg myhost.foo.com myuser@foo.com
+define(mailhosts,'/usr/share/zabbix/zabbixpdf/hosts');
+
+//from sender name
+define(mailusername,'ZABBIX');
+
+// Mail subject
+define(mailsubject,'this is the subject sample');
+
+// mail body
+define(mailbody,'This is a shrt mail body');
+
+// full path of generated reports
+define(reportsroot,'/usr/share/zabbix/zabbixpdf/reports/');
+
+?>
